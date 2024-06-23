@@ -6,7 +6,11 @@ const removeNonAlphaNumeric = (text) => {
   return text.replace(/[\W_]/g, '').toLowerCase();
 }
 
-
+const checkPalindrome = (inputText) => {
+  const cleanedInput = removeNonAlphaNumeric(inputText);
+  const reversedInput = cleanedInput.split('').reverse().join('');
+  return cleanedInput === reversedInput;
+}
 
 checkButton.addEventListener("click", function() {
   const userInput = enterInput.value;
