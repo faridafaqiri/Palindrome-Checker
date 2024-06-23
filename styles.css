@@ -1,5 +1,5 @@
 body {
-  background-color: #91DDCF;
+  background-color: #91ddcf;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin: 0;
@@ -17,7 +17,7 @@ body,
 
 .card {
   background-color: white;
-  width: min(100vw, 400px);
+  width: 35%;
   border-radius: 20px;
   padding: 20px;
   margin: 10px 0;
