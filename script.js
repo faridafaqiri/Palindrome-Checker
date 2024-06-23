@@ -1,9 +1,6 @@
 const checkButton = document.getElementById('check-btn');
 const enterInput = document.getElementById('text-input');
 const result = document.getElementById('result');
-const removeNonAlphaNumeric = (text) => {
-  return text.replace(/[\W_]/g, '').toLowerCase();
-}
 
 const checkPalindrome = (inputText) => {
   const cleanedInput = removeNonAlphaNumeric(inputText);
