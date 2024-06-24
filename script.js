@@ -7,14 +7,17 @@ const checkPalindrome = (inputText) => {
   return cleanedInput === cleanedInput.split('').reverse().join('');
 };
 
-checkButton.addEventListener ('click', function() {
-  const userInput = enterInput.value;
-  if(userInput.trim().length === 0){
-    alert('Please input a value!')}
-  const isPalindrome = checkPalindrome(userInput);
-  if(isPalindrome) {
-    result.innerHTML = `<span class='highlight'>${userInput}</span> is a palindrome`;
-  } else {
-    result.innerHTML = `<span class='highlight'>${userInput}</span> is not a palindrome`;
-  }
-});
+newFunction();
+function newFunction() {
+  checkButton.addEventListener('click', () => {
+    const userInput = enterInput.value;
+    if (userInput.trim().length === 0) alert('Please input a value!');
+    const isPalindrome = checkPalindrome(userInput);
+    if (isPalindrome) {
+      result.innerHTML = `<span class='highlight'>${userInput}</span> is a palindrome`;
+    } else {
+      result.innerHTML = `<span class='highlight'>${userInput}</span> is not a palindrome`;
+    }
+  });
+}
+
