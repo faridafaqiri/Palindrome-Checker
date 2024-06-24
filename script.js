@@ -7,7 +7,6 @@ const checkPalindrome = (inputText) => {
   return cleanedInput === cleanedInput.split('').reverse().join('');
 };
 
-newFunction();
 function newFunction() {
   checkButton.addEventListener('click', () => {
     const userInput = enterInput.value;
@@ -21,3 +20,4 @@ function newFunction() {
   });
 }
 
+newFunction();
