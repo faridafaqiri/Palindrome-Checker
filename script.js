@@ -1,10 +1,7 @@
 const checkButton = document.getElementById('check-btn');
 const enterInput = document.getElementById('text-input');
 const result = document.getElementById('result');
-
-const removeNonAlphaNumeric = (text) => {
-  return text.replace(/[\W_]/g, '').toLowerCase();
-}
+const removeNonAlphaNumeric = (text) => text.replace(/[\W_]/g, '').toLowerCase();
 
 const checkPalindrome = (inputText) => {
   const cleanedInput = removeNonAlphaNumeric(inputText);
@@ -14,12 +11,8 @@ const checkPalindrome = (inputText) => {
 
 checkButton.addEventListener("click", function() {
   const userInput = enterInput.value;
-  if(userInput.trim().length === 0) {
-    alert("Please input a value!");
-    return;
-  }
+  if(userInput.trim().length === 0) alert('Please input a value!');
   const isPalindrome = checkPalindrome(userInput);
-  
   if(isPalindrome) {
     result.innerHTML = `<span class="highlight">${userInput}</span> is a palindrome`;
   } else {
