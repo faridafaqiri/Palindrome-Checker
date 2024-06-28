@@ -8,7 +8,11 @@ The Palindrome Checker is a simple yet effective tool designed to determine whet
 
 ![Project Demo](./image/Capture.JPG)
 
-## Features
+## Deployment link
+
+<https://faridafaqiri.github.io/Palindrome-Checker/>
+
+## Features ⭐
 
 . Input Handling: Accepts user input via a text field.
 . Normalization: Removes all non-alphanumeric characters and converts the 
